@@ -8,15 +8,15 @@
 
   <!-- Styles -->
   <link href="/assets/css/app.css" rel="stylesheet">
-  <style>
-    .toast-custom {
-      position: fixed;
-      top: 61px;
-      right: 20px;
-    }
-  </style>
+
 </head>
 <body>
 <app-root></app-root>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script>
+    $.post('http://localhost/billbook_api/public/api/users', {}, function(response){
+        console.log(response);
+    })
+</script>
 </body>
 </html>
